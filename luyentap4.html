@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị lớn nhất</title>
+</head>
+<body>
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <input type="number" id="c">
+    <button onclick="abc()">check</button>
+    <script>
+        function abc(){
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+            let c = document.getElementById('c').value;
+
+            if (a > b && a > c) {
+                document.write('a lớn hơn b và c');
+            } else if (a < b && b > c) {
+                document.write('b lớn hơn a và c');
+            } else {
+                document.write('c lớn hơn a và b')
+            }
+        }
+
+    </script>
+</body>
+</html>

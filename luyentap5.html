@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện Tập 5</title>
+    <style>
+        input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+ Kiểm Tra Toán :<input type="number"min="0" max="10" id="a0"><br/>
+ Kiểm Tra Văn :<input type="number" min="0" max="10" id="a1"><br/>
+ Kiểm Tra Giữa Kì :<input type="number" min="0" max="10" id="a2"><br/>
+ Kiểm Tra Cuối Kỳ :<input type="number" min="0" max="10" id="a3"><br/>
+ <button onclick="Xephang()">Xếp Hạng</button>
+<script>
+    function Xephang(){
+        let a0 = document.getElementById('a0').value;
+        let a1 = document.getElementById('a1').value;
+        let a2 = document.getElementById('a2').value;
+        let a3 = document.getElementById('a3').value;
+
+        let trungbinhmon= (parseInt(a0) + parseInt(a1) +parseInt(a2) +parseInt(a3)) / 4;
+        console.log(trungbinhmon)
+         if (trungbinhmon >= 8){
+             document.write(trungbinhmon+ " " +'học sinh giỏi');
+         }else if (trungbinhmon>=6.5){
+             document.write(trungbinhmon+ " " +'học  sinh khá');
+         }else if(trungbinhmon >= 5) {
+             document.write(trungbinhmon+ " " +'học sinh trung bình');
+         }else {
+             document.write(trungbinhmon +" " +'học sinh kém')
+          }
+         }
+
+</script>
+</body>
+</html>

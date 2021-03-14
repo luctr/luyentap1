@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoa Hồng Nhận Được</title>
+</head>
+<body>
+    Doanh Thu : <input type="number" id="dt">
+    <button onclick="check()">check</button>
+</body>
+<script>
+    function check(){
+
+        let dt =document.getElementById('dt').value;
+        console.log(dt)
+        let sum =dt * 0.05;
+        document.write(sum + " " +'Doanh thu nhận được');
+    }
+
+</script>
+</html>
